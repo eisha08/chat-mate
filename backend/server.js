@@ -33,7 +33,7 @@ app.post("/api/gemini", async (req, res) => {
     const response = await result.response;
     const text = response.text();
 
-    res.json({ candidates: [{ content: { parts: [{ text: text }] } }] });
+    res.json({ candidates: [{ content: { parts: [{ text }] } }] });
   } catch (err) {
     console.error("Backend error:", err);
     res.status(500).json({ error: "Failed to fetch from Gemini" });

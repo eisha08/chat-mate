@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-     "prestart": "cd ../frontend && npm install && npx react-scripts build",
+     
     "start": "node server.js"
 
   },

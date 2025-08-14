@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/gemini.js"
+    }
+  ],
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build"
+    },
+    {
+      "src": "api/gemini.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/gemini",
+      "dest": "/api/gemini.js"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "cd ../frontend && npm install && npm run build"
+    "postinstall": "cd ../frontend && npm install && npx react-scripts build"
   },
   "keywords": [],
   "author": "",
